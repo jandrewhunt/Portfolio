@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--HEAD-->
+	<head>
+		<title>Jeremy Hunt</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" type="text/css" href="portfolio.css">
+	</head>
+
+    <!--BODY-->
+    <body class="Background">
+        
+        <!--NAVBAR-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+	
+        <!--BREAKS! to add space betten navbar and first heading-->
+        <br>
+        <br>
+
+        <!--BACKGROUND VIDEO-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="sandwich_a.mp4" type="video/mp4">
+                <!--DISPLAY MESSAGE IF VIDEO FAILS TO RUN-->
+                You browser doen not support HTML5 video.
+            </video>    
+        </div>
+
+        <!--VIDEO TEXT-->
+        <div class="Video_Text">
+            <h1 class="white-text">Jeremy Hunt's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>Enjoy every sandwich.</q>
+                    <br> -Warren Zevon
+                    <br>
+                    <br> My name is Jeremy Hunt. Welcome to my portfolio website. Here, I will tell you about my background and experience.
+                    <br>
+                    <br> Thanks for stopping by and enjoy! 
+                </p>
+            </strong>
+        </div>
+
+        <!--ABOUT SECTION!-->
+        <div class="Row" id="About">
+            <!--LEFT COLUMN-->
+            <div class="Column_2">
+                <img src="sandwich_1.png" alt="Where's the sandwich?">
+            </div>
+            <!--RIGHT COLUMN-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a software developer who loves coding and eating tasty sandwiches! I'm a sweet dude and I enjoy old movies, cooking and good times!
+                    <br>
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
+                    <br>
+                    <br>I am a full-stack developer and would love to work with you on your projects. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+        <!--END ABOUT SECTION!-->
+
+        <!--GITHUB SECTION-->
+        <div class="Row" id="GitHub">
+            <!--LEFT COLUMN-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="" target="_blank">Jeremy Hunt's GitHub</a></p>
+                </p>
+            </div>
+            <!--RIGHT COLUMN-->
+            <div class="Column_2">
+                <a href="" target="_blank"><img src="GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+        <!--END GITHUB SECTION-->
+
+        <!--CONTACT SECTION-->
+        <div class="Row" id="Contact">
+            <!--CONTACT IMAGE, LEFT COLUMN-->
+            <div class="Column_2 Column_tall">
+                <img src="sandwich_2.png" alt="Contact_Image">
+            </div>
+            <!--CONTACT FORM, RIGHT COLUMN-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+        <!--END CONTACT SECTION-->
+</html>
